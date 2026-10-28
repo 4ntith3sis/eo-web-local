@@ -165,17 +165,6 @@ body {
 }
 
 /* Puck renders its header/viewport toolbar through a portal, outside the page wrapper. */
-  display: flex !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: .65rem !important;
-  min-height: 58px !important;
-  padding: .75rem 1rem !important;
-  background: #ffffff !important;
-  color: #171717 !important;
-  border-bottom: 1px solid #e5e7eb !important;
-  font-size: .875rem !important;
-}
 body:has(.puck-editor-frame) {
   background: #ffffff !important;
   color: #171717 !important;
@@ -185,14 +174,6 @@ body:has(.puck-editor-frame) .puck-editor-frame > * {
   background-color: #ffffff !important;
   color: #171717 !important;
 }
-  border: 1px solid #cbd5e1 !important;
-  border-radius: .375rem !important;
-  background: #f8fafc !important;
-  color: #0f172a !important;
-  padding: .45rem .7rem !important;
-  font-weight: 700 !important;
-}
-
 body:has(.puck-editor-frame) [class*="_ViewportControls_"] {
   background: #e2e8f0 !important;
   color: #1e293b !important;
