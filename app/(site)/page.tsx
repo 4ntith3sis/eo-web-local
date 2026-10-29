@@ -38,7 +38,6 @@ export default async function Home() {
         }}
         secondaryCta={{ label: site.homepageHeroSecondaryCtaLabel ?? "Lihat Layanan", href: site.homepageHeroSecondaryCtaHref ?? "/layanan/virtual-office" }}
         image={site.homepageHeroImage}
-        imageAlt={site.homepageHeroImageAlt}
         imageLabel={site.homepageHeroImageLabel}
         trustItems={Array.isArray(site.homepageHeroTrustItems) ? site.homepageHeroTrustItems.sort((a: { sortOrder?: number }, b: { sortOrder?: number }) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0)).map((item: { text?: string }) => item.text ?? "").filter(Boolean) : undefined}
       />
@@ -53,7 +52,6 @@ export default async function Home() {
         title={site.homepageShopeeTitle}
         description={site.homepageShopeeDescription}
         image={site.homepageShopeeImage}
-        imageAlt={site.homepageShopeeImageAlt}
       />
       <PromoSection
         promotions={cmsPromotions}

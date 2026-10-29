@@ -12,7 +12,6 @@ interface HeroProps {
   secondaryCta?: { label: string; href: string };
   /** Custom hero image URL — overrides the default. */
   image?: string;
-  imageAlt?: string;
   /** Label shown on the overlay badge (bottom of hero image). Defaults to service tagline. */
   imageLabel?: string;
   trustItems?: string[];
@@ -37,7 +36,6 @@ export function Hero({
   primaryCta,
   secondaryCta,
   image,
-  imageAlt,
   imageLabel,
   trustItems,
   visual,
@@ -97,7 +95,7 @@ export function Hero({
             <div className="relative min-h-[420px] overflow-hidden rounded-3xl border border-white/10 shadow-card lg:min-h-[520px]">
               <Image
                 src={image ?? defaultHeroImage}
-                alt={imageAlt ?? "Ruang kerja EasyOffice"}
+                alt=""
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"

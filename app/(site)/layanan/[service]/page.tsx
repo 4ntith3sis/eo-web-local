@@ -84,7 +84,6 @@ export default async function ServiceLandingPage({
         title={service.title}
         description={service.intro}
         image={service.image}
-        imageAlt={service.imageAlt}
         imageLabel={service.title}
         trustItems={Array.isArray(site.homepageHeroTrustItems) ? [...site.homepageHeroTrustItems]
           .sort((a: { sortOrder?: number }, b: { sortOrder?: number }) => (a.sortOrder ?? 0) - (b.sortOrder ?? 0))
@@ -105,7 +104,6 @@ export default async function ServiceLandingPage({
           title={`Transaksi ${service.title} melalui Marketplace`}
           description={`Pilih paket ${service.title} EasyOffice dan lakukan pembayaran dengan mudah melalui Shopee.`}
           image={site.homepageShopeeImage}
-          imageAlt={site.homepageShopeeImageAlt}
         />
        {serviceLegalNotes.length ? (
          <Section eyebrow="Informasi Legalitas" title={`Catatan Legalitas ${service.title}`} tone="gray">

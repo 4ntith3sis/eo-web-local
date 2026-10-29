@@ -84,7 +84,6 @@ export default async function ServiceLocationPage({
         title={officeName}
         description={officeDescription}
         image={combo.image}
-        imageAlt={combo.imageAlt}
         imageLabel={officeName}
         primaryCta={{
           label: "Hubungi Kami",
@@ -139,7 +138,6 @@ export default async function ServiceLocationPage({
         title={`Transaksi ${service.title} melalui Marketplace`}
         description={`Pilih paket ${service.title} di ${officeName} dan lakukan pembayaran melalui Shopee.`}
         image={site.homepageShopeeImage}
-        imageAlt={site.homepageShopeeImageAlt}
       />
       {combo.pricing.length ? <div id="harga">
         <PricingTable
